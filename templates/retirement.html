@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Retirement Calculation Page</h1>
+    <form action="" method="POST">
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.age.label }} <br>
+            {{ form.age() }} <br>
+        </p>
+        <p>
+            {{ form.salary.label }} <br>
+            {{ form.salary() }} <br>
+        </p>
+        <p>
+            {{ form.savedPercent.label }} <br>
+            {{ form.savedPercent() }} <br>
+        </p>
+        <p>
+            {{ form.savingsGoal.label }} <br>
+            {{ form.savingsGoal() }} <br>
+        </p>
+        <p>
+            {{ form.submit() }}
+        </p>
+    </form>
+    {% if retirement_report != -1 %}
+        {% if retirement_report >= 100 %}
+            <p>You will not meet your goal and you would be {{ retirement_report }} years old</p>
+        {% endif %}
+        
+        {% if retirement_report < 100 %}
+            <p>You will meet your goal at {{ retirement_report }} years old</p>
+        {% endif %}
+    {% endif %}
+{% endblock %}
