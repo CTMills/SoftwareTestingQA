@@ -5,4 +5,5 @@ I used semgrep for my local code analysis, travisCI for my continuous integratio
 You can visit the application here: https://software-testing-3-4.herokuapp.com/
 
 Below is the status of the build according to the latest build from TravisCI
+
 [![Build Status](https://travis-ci.org/CTMills/SoftwareTestingQA.svg?branch=main)](https://travis-ci.org/CTMills/SoftwareTestingQA)
