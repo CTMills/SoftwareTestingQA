@@ -7,3 +7,6 @@ before_script:
 
 script:
   - python3 -m pytest app_test.py
+
+after_success:
+  - coveralls
