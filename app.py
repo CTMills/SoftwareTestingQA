@@ -1,6 +1,7 @@
 from flask import Flask, render_template, redirect
 from forms import bmiForm, retirementForm
 from calculation import bmi_calculate, retirement_calculate
+import os
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'jfkldsajffdsafdsf'
@@ -30,3 +31,6 @@ def retirement():
 @app.route("/test")
 def test():
     return "Works!"
+
+if __name__ == '__main__':
+    app.run()
