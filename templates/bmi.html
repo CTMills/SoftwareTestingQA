@@ -7,14 +7,23 @@
         <p>
             {{ form.heightFeet.label }} <br>
             {{ form.heightFeet() }} <br>
+            {% for error in form.heightFeet.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
         </p>
         <p>
             {{ form.heightInches.label }} <br>
             {{ form.heightInches() }} <br>
+            {% for error in form.heightInches.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
         </p>
         <p>
             {{ form.weightPounds.label }} <br>
             {{ form.weightPounds() }} <br>
+            {% for error in form.weightPounds.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
         </p>
         <p>
             {{ form.submit() }}

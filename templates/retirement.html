@@ -7,18 +7,30 @@
         <p>
             {{ form.age.label }} <br>
             {{ form.age() }} <br>
+            {% for error in form.age.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
         </p>
         <p>
             {{ form.salary.label }} <br>
             {{ form.salary() }} <br>
+            {% for error in form.salary.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
         </p>
         <p>
             {{ form.savedPercent.label }} <br>
             {{ form.savedPercent() }} <br>
+            {% for error in form.savedPercent.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
         </p>
         <p>
             {{ form.savingsGoal.label }} <br>
             {{ form.savingsGoal() }} <br>
+            {% for error in form.savingsGoal.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
         </p>
         <p>
             {{ form.submit() }}
