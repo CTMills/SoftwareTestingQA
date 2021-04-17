@@ -7,3 +7,5 @@ You can visit the application here: https://software-testing-final.herokuapp.com
 Below is the status of the build according to the latest build from TravisCI
 
 [![Build Status](https://travis-ci.org/CTMills/SoftwareTestingQA.svg?branch=main)](https://travis-ci.org/CTMills/SoftwareTestingQA)
+
+Coverage Report from Coveralls [![Coverage Status](https://coveralls.io/repos/github/CTMills/SoftwareTestingQA/badge.svg?branch=main)](https://coveralls.io/github/CTMills/SoftwareTestingQA?branch=main)
